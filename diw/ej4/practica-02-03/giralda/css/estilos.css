@@ -1,66 +1,46 @@
-div#cuerpo div * span {
- font-family: Comic Sans MS;
-text-decoration: underline;
-  font-style:italic;
-  font-weight: bold;
-font-size:10pt;
- color:blue;
-}
-#historia p{
- font-family:Times New Roman;
+#campanas>div{
+ font-family:Verdana;
+ text-transform: uppercase;
 font-size:9pt;
- color:red;
-
+ color:brown;
 }
 
-h3:first-of-type + div{
-   font-family:Tahoma;
+#veleta p~p{
+ font-family:Coldbringer;
+   src: url('../fonts/Coldbringer.ttf') format('truetype');
    font-size:10pt;
-    color:green;
+    color:#ab2a3e; //granate
 }
 
-#historia ol>li{
-    color:#1C5C25;
-}
-li{
-    color:#520909;
+@font-face {
+  font-family:Coldbringer;
+    src: url('../fonts/Coldbringer.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }
 
-@media( min-width:400px ) {
-div#cuerpo div * span{
+@media( min-width:500px ) {
+#campanas>div{
+font-size:10pt;
+ color:grey;
+ }
+}
+@media( min-width:500px ) {
+#veleta p~p{
 font-size:11pt;
- color:red;
+ color:pink;
  }
 }
-
-@media( min-width:400px ) {
-h3:first-of-type + div{
-font-size:12pt;
- color:red;
- }
-}
-
-@media( min-width:400px ) {
-#historia p{
+@media( min-width:1000px ) {
+#campanas>div{
 font-size:11pt;
- color:green;
+ color:coral;
  }
 }
-@media( min-width:800px ) {
-div#cuerpo div * span{
-font-size:12pt;
- color:green;
- }
-}
-@media( min-width:800px ) {
-h3:first-of-type + div{
-font-size:14pt;
- color:blue;
- }
-}
-@media( min-width:800px ) {
-#historia p{
-font-size:13pt;
- color:blue;
+
+@media( min-width:1000px ) {
+#veleta p~p{
+font-size:21pt;
+ color:#D85E20;
  }
 }

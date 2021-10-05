@@ -1,24 +1,103 @@
-#campanas>div{
- font-family:Verdana;
- text-transform: uppercase;
-font-size:9pt;
- color:brown;
+
+h3 [title]{
+  font-family: Arial;
+  color: #948B0E;
 }
 
-#veleta p~p{
- font-family:Coldbringer;
-   src: url('fonts/Coldbringer.ttf') format('truetype');
+*[class="historia"]{
+  font-family: Century;
+  color: #CBE68D;
+  font-size: 9pt;
+}
+@media(min-width:450px){
+  *[class="historia"]{
+    font-family: Century;
+    font-size: 10pt;
+  }
+}
+@media(width>900px){
+  *[class="historia"]{
+    font-family: Century;
+    font-size: 11pt;
+  }
 }
 
-@media( min-width:500px ) {
-#campanas>div{
-font-size:10pt;
- color:grey;
- }
+* [class*="cantabra"]{
+  font-family: Corbel;
+  color: #54B3B6;
+  font-size: 10pt;
 }
-@media( min-width:1000px ) {
-#campanas>div{
-font-size:11pt;
- color:coral;
- }
+@media(min-width:450px){
+  * [class*="cantabra"]{
+    font-family: Corbel;
+    font-size: 11pt;
+  }
+}
+@media(width>900px){
+  * [class*="cantabra"]{
+    font-family: Corbel;
+    font-size: 12pt;
+  }
+}
+
+*[title^="Cantabra"]{
+  font-family: Georgia;
+  color: #751A7C;
+  font-size: 11pt;
+}
+@media(min-width:450px){
+  *[title^="Cantabra"]{
+    font-family: Corbel;
+    font-size: 12pt;
+  }
+}
+@media(width>900px){
+  *[title^="Cantabra"]{
+    font-family: Corbel;
+    font-size: 13pt;
+  }
+}
+
+*[title$="loco"]{
+font-family: Latha;
+color: #273CDD;
+font-size: 12pt;
+}
+@media(min-width:450px){
+  *[title$="loco"]{
+    font-family: Latha;
+    font-size: 12pt;
+  }
+}
+@media(width>900px){
+  *[title$="loco"]{
+    font-family: Latha;
+    font-size: 12pt;
+  }
+}
+
+[title="conquista"]{
+font-family: Calibri;
+color: #910D1F;
+font-size: 8pt;
+}
+@media(min-width:450px){
+  [title="conquista"]{
+  font-family: Calibri;
+    font-size: 10pt;
+  }
+}
+@media(width>900px){
+    [title="conquista"]{
+    font-family: Calibri;
+    font-size: 12pt;
+  }
+}
+.reconquista:first-letter{
+font-size: 3rem;
+color:#CDB3DD;
+}
+.cantabria::first-line{
+  color: #D5D21B;
+  text-transform:capitalize;
 }
