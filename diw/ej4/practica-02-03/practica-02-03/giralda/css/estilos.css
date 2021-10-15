@@ -1,0 +1,46 @@
+#campanas>div{
+ font-family:Verdana;
+ text-transform: uppercase;
+font-size:9pt;
+ color:brown;
+}
+
+#veleta p~p{
+ font-family:Coldbringer;
+   src: url('../fonts/Coldbringer.ttf') format('truetype');
+   font-size:10pt;
+    color:#ab2a3e; //granate
+}
+
+@font-face {
+  font-family:Coldbringer;
+    src: url('../fonts/Coldbringer.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media( min-width:500px ) {
+#campanas>div{
+font-size:10pt;
+ color:grey;
+ }
+}
+@media( min-width:500px ) {
+#veleta p~p{
+font-size:11pt;
+ color:pink;
+ }
+}
+@media( min-width:1000px ) {
+#campanas>div{
+font-size:11pt;
+ color:coral;
+ }
+}
+
+@media( min-width:1000px ) {
+#veleta p~p{
+font-size:21pt;
+ color:#D85E20;
+ }
+}
