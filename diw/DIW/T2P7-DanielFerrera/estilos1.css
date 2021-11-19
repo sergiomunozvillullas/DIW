@@ -1,0 +1,74 @@
+.desordenada{
+  list-style-position:outside;
+  list-style-image: url("imagenes/mini-acueducto.jpg");
+}
+
+#primero{
+  display:flex;
+  width: 900px;
+  height: 1050px;
+  border: 5px;
+  border-style: solid;
+  border-color: lightblue;
+  flex-direction: column-reverse;
+
+}
+#primero>div{
+
+  width: 800px;
+  height: 500px;
+  text-align:  center;
+margin: auto;
+  border: 5px;
+  border-style: solid;
+  border-color: blue;
+}
+
+#segundo{
+    display:flex;
+      width: 900px;
+      border-style: solid;
+      border-color: lightgreen;
+      flex-direction: row-reverse;
+}
+#segundo>div{
+      width: 300px;
+      margin:auto;
+        text-align: right;
+      border-style: solid;
+      border-color: green;
+}
+#tercero{
+    display:flex;
+      width: 900px;
+      height: 800px;
+      border-style: solid;
+      border-color: orange;
+      flex-direction: column;
+
+}
+#tercero>div{
+  width: 900px;
+      height: 350px;
+      margin: auto;
+      border-style: solid;
+      border-color: yellow;
+}
+#cuarto{
+    display:flex;
+      width: 800px;
+      border-style: solid;
+      border-color: pink;
+      flex-direction: row;
+
+}
+#cuarto>div{
+  width: 300px;
+      margin: auto;
+      border-style: solid;
+      border-color: purple;
+}
+
+#cuarto>div:nth-child(1){
+  grid-row:
+}

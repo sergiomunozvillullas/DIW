@@ -1,0 +1,36 @@
+body{
+    font-family: "Lucida Sans";
+    color: #690C26;
+    font-weight: bold;
+    font-size: 11pt;
+}
+@media (min-width:600px) {
+  body{
+    font-size: 12pt;
+  }
+}
+
+@media (min-width:1200px) {
+  body{
+    font-size: 13pt;
+  }
+}
+
+.c1{
+  text-decoration: line-through;
+  background: url("../imagenes/torrebujaco.jpg");
+  background-clip: content-box;
+}
+
+.c2{
+  background: url("../imagenes/palacioovando.jpg");
+  background-clip: padding-box;
+  overflow-x: hidden;
+  /* background-clip: content-box; */
+}
+
+.c3{
+  background: url("../imagenes/iglesiasantiago.jpg");
+  background-clip: border-box;
+  overflow-y: hidden;
+}

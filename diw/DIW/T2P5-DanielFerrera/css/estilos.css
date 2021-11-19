@@ -1,0 +1,116 @@
+body{
+  background-color: #C2AD85;
+}
+div#inicio{
+margin:14px;
+border: 1px;
+border-color: red;
+border-style:solid;
+padding: 5px;
+outline:yellow 2px ;
+outline-style: solid;
+background-clip: padding-box;
+background-color: blue;
+}
+div#historia{
+border-top: 2px;
+border-top-color: orange;
+border-top-style: double;
+border-bottom: 1px;
+border-bottom-color: yellow;
+border-bottom-style: dotted;
+border-left: 3px;
+border-left-color: brown;
+border-left-style:dashed;
+border-right: 3px;
+border-right-color: #A292A4;
+border-right-style:groove;
+padding-top:5px ;
+padding-left:7px ;
+padding-right:3px ;
+padding-bottom:2px ;
+outline: #7C0707 5px ;
+text-shadow: -3px 3px 3px#4A5860;
+background-clip:padding-box;
+background-color: #B2EBA9;
+margin-top: 20px;
+margin-left: 30px;
+margin-right: 15px;
+margin-bottom: 10px;
+
+}
+
+div#universidad{
+  margin-top: 14px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 14px;
+  border: 5px;
+  border-style:solid;
+  border-color: blue;
+  padding-top:7px ;
+  padding-left:11px ;
+  padding-right:11px ;
+  padding-bottom:7px ;
+  outline:red 3px ;
+  outline-style: solid;
+  background-clip:content-box;
+  background-color: green;
+}
+div#conchas{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border: 3px;
+  border-color: green;
+  border-style:solid;
+  padding-top:5px ;
+  padding-left:7px ;
+  padding-right:7px ;
+  padding-bottom:5px ;
+  outline:grey 1px ;
+  outline-style: solid;
+    background-clip:border-box;
+    background-repeat: no-repeat;
+  background-image: url("../imagenes/casa-conchas-salamanca.jpg");
+  background-size: cover;
+}
+div#nueva{
+margin: 17px;
+  border: 4px;
+  border-color: violet;
+  border-style:solid;
+  padding:8px;
+  outline:orange 1px ;
+  outline-style: solid;
+    background-clip:padding-box;
+    background-repeat: no-repeat;
+  background-image: url("../imagenes/catedral-nueva.jpg");
+  background-size: cover;
+}
+div#vieja{
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 11px;
+  margin-bottom: 11px;
+border-top: 15px;
+border-top-color: brown;
+border-left: 15px;
+border-left-color: brown;
+border-bottom: 11px;
+border-bottom-color: orange;
+border-right: 11px;
+border-right-color: orange;
+  border-style:solid;
+  padding-top:9px ;
+  padding-left:9px ;
+  padding-right:8px ;
+  padding-bottom:8px ;
+  outline:yellow 3px ;
+  outline-style: solid;
+    background-clip:content-box;
+    background-repeat: no-repeat;
+  background-image: url("../imagenes/o catedral-vieja.jpg");
+  background-size: cover;
+}

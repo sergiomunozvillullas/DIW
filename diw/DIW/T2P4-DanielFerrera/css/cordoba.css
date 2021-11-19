@@ -1,0 +1,25 @@
+.origenes > .viene   {
+  font-family: Comic Sans MS;
+  font-size: 14pt;
+  color: green;
+  text-decoration: underline;
+}
+.cordoba>.primero{/*de al menos un elemento cordoba*/
+  font-family: Times New Roman;
+  font-size: 13pt;
+  color: blue;
+  font-style: italic;
+}
+
+[class$="ana"]{
+  font-weight: bold;
+}
+
+[class^="siglo"]{
+  font-weight: bold;
+  font-style: italic;
+}
+
+[class*="X"]{
+  color:red;
+}

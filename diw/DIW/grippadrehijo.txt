@@ -1,0 +1,13 @@
+Padre							Hijos
+display:grid					grid-row
+grid-template-columns			grid-column
+grid-template-rows				grid-row-start
+grid-template-areas				grid-row-end
+grid-template					grid-column-start
+grid-auto-columns				grid-column-end
+grid-auto-rows					grid-area
+grid-auto-flow					
+grid-row-gap
+grid-column-gap
+grid-gap
+grid
