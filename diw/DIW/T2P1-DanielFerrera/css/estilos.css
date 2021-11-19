@@ -1,0 +1,57 @@
+body{
+background-size: cover;
+background-image: url("../img/fondo.jpg");
+text-align: center;
+font-family: Calibri;
+font-size: 6pt;
+color: red;
+}
+
+header{
+  font-size: 90pt;
+  text-align: center;
+  color: black;
+}
+
+a{
+  font-size: 40pt;
+  text-align: center;
+  color: black;
+text-decoration: none;
+}
+
+@media(min-width:400px){
+  body{
+    font-family: Cambria;
+    font-size: 8pt;
+    color: blue;
+    background-image: url("../img/fondo1.jpg");
+  }
+}
+
+@media(min-width:800px){
+  body{
+    font-family: Comic sans ms;
+    font-size: 10pt;
+    color: green;
+    background-image: url("../img/fondo2.jpg");
+  }
+}
+
+@media(min-width:1200px){
+  body{
+    font-family: Times New Roman;
+    font-size: 12pt;
+    color: yellow;
+    background-image: url("../img/fondo3.jpeg");
+  }
+}
+
+@media(min-width:1600px){
+  body{
+    font-family: Courier New;
+    font-size: 16pt;
+    color: orange;
+    background-image: url("../img/fondo4.jpg");
+  }
+}
