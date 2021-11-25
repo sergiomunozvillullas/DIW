@@ -1,0 +1,563 @@
+si es menor de 400 la letra en calibri
+body{
+font-family:calibri;
+}
+
+@media(min-width:400px){
+font-family:cambria;
+}
+
+@media(min-width:800px){
+font-family:comic sans ms;
+}
+
+@media(min-width:1200px){
+font-family:times new roman;
+}
+
+@media(min-width:1600px){
+font-family:courier new;
+}
+<h1 color:red>
+
+.clase
+
+todos las etiquetas div dentro del id cuerpo
+#cuerpo div 
+
+
+DIFERENCIA ENTRE EM  Y  REM
+
+EM pilla el tamaño del mismo elemento
+REM pilla el tamaño del html o del body creo
+
+cambiar la altura de linea un 36% mayor que el tipo de letra
+line-height: 0.36rem;
+div
+h1
+h2
+> solo va al primer h1
+* iria al nieto, al h2
+
+Haz que todos los párrafos <span> que sean nietos o más
+descendientes de etiquetas<div>que son a su vez descendientes
+del párrafo div con identificador cuerpo, PRACTICA P3 ANDALUCIA
+div#cuerpo  div *span{
+}
+
+Haz que los párrafos <div> que sean hermanos inmediatos de
+<h3> se muestren con el tipo de letra Tahoma
+h3 +div{
+  font-family: Tahoma;
+}
+
+ Todos <li> que sean hijos de un <ol> y que sean descendiente del
+identificador historia
+#historia ol>li{
+  color:#1C5C25;
+}
+
+Haz que todos los párrafos <p> que estén precedidos de otro
+párrafo <p> dentro del identificador veleta
+#veleta p~p{
+}
+
+Haz que todas las etiquetas <h3> que tengan el atributo title se
+muestre con el..
+<div title="">
+<h3> EN HTML
+h3[title]{font-size:4pt}
+
+Haz que todas las etiquetas que tengan el atributo class con el
+valor historia 
+[class="historia"]{
+}
+
+Haz que todas las etiquetas con el atributo class que entre sus
+valores tenga el valor cantabra 
+[class~="cantabra"]{
+}
+
+Haz que todas las etiquetas con el atributo title que comienza con
+la cadena Cantabra
+[title^="Cantabra"]{
+}
+
+Haz que todas las etiquetas con el atributo title que termina
+con la cadena loco 
+[title$="loco"]{
+}
+
+Haz que todas las etiquetas con el atributo title que contengan la
+cadena conquista 
+[title*="conquista"]{
+}
+
+Haz que la primera letra de la clase reconquista tenga un tamaño
+3 veces superior al normal
+.reconquista::first-letter{
+  font-size: 3rem; PORQUE ES RESPECTO AL NORMAL
+}
+Haz que la primera fila de la clase cantabria y la primera letra cada una de sus palabras debe aparecer
+en mayúsculas.
+.cantabria::first-line{
+text-transform: capitalize;
+}
+
+Haz que los párrafos de la clase "viene" que sean hijos de un
+elemento de la clase "origenes" 
+.origenes div.viene{
+
+
+Haz que los elementos que sean de la clase "primero" que sean
+hijos de un elemento de al menos de la clase "cordoba"
+.cordoba>.primero{
+
+Todos los párrafos que tengan identificador se van a mostrar ADA
+div[id]{
+
+dicho color se aplicará a partir del contenido
+background-clip: content-box;
+
+METER LETRA FICHERO
+@font-face{
+ font-family:Heracles;
+ src: url('../../tipo letra/The Constellation of Heracles.ttf');
+ font-weight:bold;
+ font-style:normal;
+ }
+
+MUCHAS IMAGENES SIN QUE SE REPITAN, Y ESTATICAS CON EL FIXED Y QUE OCUPEN TODA LA PANTALLA
+Dichas imágenes
+deberán ocupar toda la pantalla, sin repetirse ninguna de ellas.
+Además, las imágenes siempre estarán visibles y no se desplazarán
+  background-image:url("../../imagenes/catedral leon.jpg") ,
+                   url("../../imagenes/casa botines.jpg") ,
+                   url("../../imagenes/convento san marcos.jpg");
+
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 50% 50%, 50% 50%, 100% 50%;
+background-position: top left,top right,bottom;
+
+SANGRIA
+text-indent:10ch;
+esta es 10 veces mayor al numero 0
+
+
+dicha imagen se va a mostrar a partir del
+contexto y si tiene un tamaño superior se deberá omitir la parte que
+sobresale. El texto deberá aparecer tachado.
+background-image: url("../../imagenes/torre bujaco.jpg");
+  background-clip: content-box;
+  overflow:hidden;
+
+
+dicha imagen se va a mostrar a partir
+del relleno y si tiene un tamaño superior se deberá omitir la parte
+que sobresale en el ancho
+  background-image: url("../../imagenes/palacio ovando.jpg");
+  background-clip: padding-box;
+  overflow-x:hidden;
+
+
+dicha imagen se va a mostrar a partir
+del borde y si tiene un tamaño superior se deberá omitir la parte
+que sobresale en el alto.
+background-image: url("../../imagenes/iglesia santiago.jpg");
+    background-clip: border-box;
+    overflow-y: hidden;
+
+márgenes alrededor del párrafo de 14px
+margin: 14px;
+
+relleno alrededor de 5px
+padding: 5px;
+
+sobrelinea de 2px de color amarillo
+outline-width: 2px;
+outline-color: yellow;
+outline-style:solid;
+color de fondo del párrafo azul a partir del borde
+background-color: blue;
+background-clip: border-box;
+
+sombra izquierda y abajo en color 4A5860
+text-shadow: -2px 2px 0 #4A5860;
+
+Imagen de fondo casa-conchas-salamanca.jpg se mostrará sin repetir
+ajusto al párrafo y se muestra a partir del margen.
+background-image: url('../imagenes/casa-conchas-salamanca.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+
+Imagen de fondo catedral-nueva.jpgse mostrará sin repetir ajusto al
+párrafo y se muestra a partir del relleno.
+background-image: url('../imagenes/catedral-nueva.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+
+Imagen de fondo catedral-vieja.jpg se mostrará sin repetir ajusto al
+párrafo y se muestra a partir del contenido.
+ background-image: url('../imagenes/catedral-vieja.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+
+Los párrafos div con identificadores primero, segundo, tercero y
+cuarto, todos ellos hijos del párrafo div con identificador historia
+div#historia>div#primero, div#historia>div#segundo, div#historia>div#tercero, div#historia>div#cuarto{
+
+FLEXBOX
+display:flex;
+
+El párrafo div con identificador primero va a tener una alineación
+vertical al inicio de la caja, se va a mostrar en fila. 
+div#primero{
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+Vamos a incrementar
+el tamaño del tercer hijo para hacer que se complete el tamaño del
+padre.
+div#primero >:nth-child(3){
+  flex-grow: 2;
+}
+
+El párrafo div con identificador segundo va a tener una alineación
+vertical centrada, se va a mostrar en fila inversa. 
+div#segundo{
+  align-items: center;
+  flex-direction: row-reverse;
+}
+Vamos a hacer que el
+primero de los párrafos hijos crezca para ocupar el espacio que sobra
+div#segundo >:first-child{
+  flex-grow: 2;
+}
+
+CON ORDEN QUE QUERAMOS
+El párrafo div con identificador tercero va a tener una alineación
+vertical al final. Vamos a cambiar el orden de visualización, mostrando:
+i. en primer lugar el tercer párrafo div hijo
+ii. en segundo lugar el primer párrafo div hijo
+iii. en tercer lugar el segundo párrafo div hijo.
+
+div#tercero{
+  align-items: flex-end;
+}
+
+div#tercero >:nth-child(3){
+  order:1;
+}
+div#tercero >:first-child{
+  order:2;
+}
+
+div#tercero >:nth-child(2){
+  order:3;
+}
+
+El párrafo div con identificador cuarto va a tener una alineación
+vertical a la base de la línea. Vamos a hacer que el tamaño de los
+párrafos crezca para llenar el ancho de visualización de tal forma que:
+i. el incremento del segundo párrafo div hijo sea el doble del
+incremento del primer párrafo div hijo.
+
+div#cuarto{
+  align-items: baseline;
+}
+
+div#cuarto >:first-child{
+  flex-grow: 1;
+}
+
+div#cuarto >:nth-child(2){
+  flex-grow: 2;
+}
+
+Todos los párrafos div hijos del párrafo div con identificador
+monumentos, que tengan el atributo id se van a mostrar con
+estructura de flexbox.
+div#monumentos>div[id]{
+  display: flex;
+}
+
+El párrafo con identificador giralda va a tener:
+i. alineación vertical a la parte superior
+ii. alineación horizontal va a ser con espacios al final de la línea.
+div#giralda{
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+
+alineación vertical a la parte inferior.
+ii. Los párrafos que contiene van a decrementar su ancho para
+que el tamaño de todos ellos ocupa el ancho del padre, para
+lo cual:
+1. los dos párrafos centrales se van a decrementar el
+doble que los párrafos exteriores.
+div#catedral{
+  align-self: flex-end;
+  justify-content: center;
+}
+
+div#catedral >:nth-child(2), div#catedral >:nth-child(3){
+  flex-shrink: 2;
+}
+
+div#catedral >:nth-child(1), div#catedral >:nth-child(4){
+  flex-shrink: 1;
+}
+
+El párrafo con identificador detcatedral va a tener:
+i. alineación vertical, a la base de la línea
+ii. alineación horizontal va a ser insertando blancos en medio.
+div#detcatedral{
+  align-self: baseline;
+  justify-content: space-between;
+}
+
+El párrafo con identificador retcatedralla va a tener alineación
+horizontal insertado blancos al inicio y al final.
+div#retcatedral{
+  align-self:auto;
+  justify-content: space-around;
+}
+
+GRID
+El párrafo div con identificador divisiones se va a mostrar con
+estructura de grid va a tener un borde de color magenta
+div#divisiones{
+  display:grid;
+  border: 3px solid magenta;
+
+COLUMNAS
+si la resolución es menor de 400 pixeles va a tener una
+columna y nueve filas
+LA SEGUNDA PARTE DEL PARENTESIS ES ESTO
+Todas las filas van a tener la misma altura, que será de 500px
+  grid-template-rows: repeat(9,500px);
+
+SI CAMBIA LA RESOLUCION CAMBIAN LAS FILAS Y COLUMNAS
+@media(min-width:400px){
+  div#divisiones{
+    grid-template-columns: repeat(2,32%);
+    grid-template-rows: repeat(5,500px);
+  }
+}
+
+Todas las columnas van a tener el mismo ancho, que va a ser
+el 32% del ancho del padre
+ grid-template-columns: 32%;
+
+las filas van a tener una separación entre ellas de 10px
+grid-row-gap: 10px;
+
+las columnas van a tener una separación entre ellas
+de 15px.
+grid-column-gap: 15px;
+
+APUNTES PROFE
+grid-auto-flow:row|column|dense
+
+Con row se completan las filas y si es necesario se añaden más filas.
+Con column se completan las columnad y si es necesario se añaden más columnas.
+Con dense se rellenan los primeros huecos existentes.
+
+DISTRIBUIR FILAS Y COLUMNAS
+
+vamos a colocar el párrafo div hijo con identificador cate01 en
+la segunda fila tercera columnas
+div#catedral>div#cate01{
+  grid-row:2;
+  grid-column:3;
+}
+ix. vamos a colocar el párrafo div hijo con identificador cate02 en
+la cuarta fila segunda columna
+div#catedral>div#cate02{
+  grid-row:4;
+  grid-column:2;
+}
+x. vamos a colocar el párrafo div hijo con identificador cate03 en
+la primera fila segunda columna
+div#catedral>div#cate03{
+  grid-row:1;
+  grid-column:2;
+}
+xi. vamos a colocar el párrafo div hijo con identificador cate04 en
+la tercera fila primera columna
+div#catedral>div#cate04{
+  grid-row:3;
+  grid-column:1;
+}
+
+xii. vamos a colocar el resto de párrafos div hijos se van a colocar
+en los primeros huecos disponibles.
+grid-auto-flow:dense
+
+
+LISTAS
+Pon delante de cada elemento de la lista no ordenada la imagen
+"mini-acueducto.jpg". Se va a mostrar la imagen fuera del flujo del
+contenido.
+ul{
+  list-style-image:url("../imagenes/mini-acueducto.jpg");
+  list-style-position:outside;
+}
+
+ejemplo1
+El párrafo con identificador primero se va a mostrar con estructura
+de caja, flexbox, va a tener un ancho de 900 pixeles y un alto de 1050
+pixeles. Los párrafos div hijos del párrafo con identificador primero
+van a tener un ancho de 800 pixeles x 300 pixeles, su contenido se va
+a mostrar centrado, se van a mostrar verticalmente de abajo a arriba
+y alineados a la parte inferior.
+#primero{
+  display:flex;
+  width: 900px;
+  height: 1050px;
+  align-items: flex-end; CREO QUE SERIA CENTER PERO BUENO
+  flex-direction: column-reverse;
+}
+
+ejemplo2
+El párrafo con identificador segundo se muestra con estructura de
+caja, flexbox, va a tener un ancho de 900 pixeles. Los párrafos div
+hijos del párrafo con identificador segundo se muestren
+horizontalmente de derecha a izquierda, y alineados a la derecha.
+Van a tener un ancho de 300 pixeles. 
+#segundo{
+  display: flex;
+  width: 900px;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+ejemplo3
+El párrafo con identificador tercero se muestra con estructura de
+caja, flexbox, va a tener un ancho de 900 pixeles y un alto de 800
+pixeles. Los párrafos div hijos del párrafo con identificador tercero se
+muestran verticalmente, con alineación centrada, van a tener un
+tamaño de 900 pixeles x350pixeles. 
+#tercero{
+  display: flex;
+  width: 900px;
+  height: 800px;
+  align-items: center;
+  flex-direction: column;
+}
+
+LETRAS
+Pon como indicador de la primera lista ordenada las letras griegas en
+minúsculas, mostrándose dentro del flujo del contenido.
+ol:first-of-type{
+  list-style-type:lower-greek;
+  list-style-position:inside;
+}
+
+Pon como indicador de la segunda lista ordenada los número con
+ceros no significativos, mostrándose fuera del flujo del contenido.
+ol:nth-of-type(2){
+  list-style-type: decimal-leading-zero;
+  list-style-position:outside;
+}
+
+ se van a alienar dejando espacios al inicio y al final.
+ justify-content: space-around;
+
+NIETOS Y FLOAT
+Haz que las cabeceras h2 nietas de los párrafos div con
+identificadores primero y tercero sean elementos flotantes a la
+izquierda
+
+div#segundo * h2 , div#cuarto * h2{
+  float:right;
+}
+
+SIN FLOAT
+Haz que el párrafo div con identificador linajes no admita elementos
+flotantes a la izquierda.
+div#linajes{
+  clear: left;
+}
+
+elementos flotantes ni a la izquierda ni a la derecha.
+div#muerte,div#parral{
+  clear:both;
+}
+
+LISTAS CONTADORES EJEMPLOS
+
+Haz que la primera lista ordenada, con identificador leyen, se
+muestre el primer elemento con el valor 100 y luego se va a ir
+incrementado su valor de 5 en 5.
+
+ol:first-of-type#leyen{
+  list-style-type: none;
+  counter-reset: primero 95;
+}
+ol:first-of-type#leyen li{
+  counter-increment: primero 5;
+}
+
+ol:first-of-type#leyen li::before{
+  content: counter(primero) ". ";
+}
+
+Haz que los elementos de la lista ordenada con identificador
+monumentos se muestren con los caracteres utf-8 que van del 24D0
+al 24E9. Como si fuesen un alfabeto.
+ol#monumentos{
+  list-style-type: segundo;
+}
+
+@counter-style segundo{
+  system:alphabetic;
+  symbols: \24D0 \24D1 \24D2 \24D3 \24D4 \24D5 \24D6 \24D7 \24D8 \24D9
+\24DA \24DB \24DC \24DD \24DE \24DF\24E0 \24E1 \24E2 \24E3 \24E4 \24E5
+\24E6 \24E7 \24E8 \24E9;
+}
+
+Haz que los elementos de la lista ordenada con identificador pueblos
+se muestren con números en octal, mostrando al menos 4 dígitos,
+esto es, se muestran ceros no significativos para llegar a 4 dígitos.
+Además solamente se van a mostrar con esa numeración los 15
+primeros, el resto se van a mostrar con el tipo lower-armenian.
+
+ol#pueblos{
+  list-style-type: tercero;
+}
+
+@counter-style tercero{
+  system:numeric;
+  symbols:'0''1''2''3''4''5''6''7';
+  pad:4 '0';
+ range:1 15;
+ fallback:lower-armenian;
+}
+
+
+Haz que los elementos de la lista ordenada con identificador otros se
+muestren con los caracteres de código utf-8 270F, 272F y 27B3, que
+se van a ir repitiendo de forma cíclica.
+
+ol#otros{
+  list-style-type: cuarto;
+}
+
+@counter-style cuarto{
+  system:cyclic;
+  symbols:'\270F''\272F''\27B3';
+}
+
+
+
+
+
+
+
