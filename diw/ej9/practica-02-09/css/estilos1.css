@@ -1,0 +1,50 @@
+h1+ img{
+  animation: vueltas 1s infinite linear;
+}
+
+@keyframes vueltas {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+[class="uno"]{
+  -moz-transform:translate(40px);
+  -webkit-transform:translate(40px);
+  -o-transform:translate(40px);
+  transform:translate(40px);
+}
+h2+ img{
+  width:300px;
+  -moz-transform:rotateX(25deg);
+  -webkit-transform:rotateX(25deg);
+  -o-transform:rotateX(25deg);
+  transform:rotateX(25deg);
+}
+
+br+ img{
+  width:300px;
+  -moz-transform:rotateY(18deg);
+  -webkit-transform:rotateY(18deg);
+  -o-transform:rotateY(18deg);
+  transform:rotateY(18deg);
+}
+
+[class="dos"]{
+  -moz-transform:skewX(15deg);
+  -webkit-transform:skewX(15deg);
+  -o-transform:skewX(15deg);
+  transform:skewX(15deg);
+}
+
+
+[class="tres"]{
+  -moz-transform:skewY(20deg);
+  -webkit-transform:skewY(20deg);
+  -o-transform:skewY(20deg);
+  transform:skewY(20deg);
+}

@@ -1,0 +1,125 @@
+article[class="uno"] img:hover{
+width:100px;
+}
+article[class="uno"] img{
+  width:400px;
+-moz-transition-property: width;
+-webkit-transition-property: width;
+-o-transition-property: width;
+transition-property: width;
+
+-moz-transition-duration: 5s;
+-webkit-transition-duration: 5s;
+-o-transition-duration: 5s;
+transition-duration: 5s;
+}
+
+
+article[id="dos"] +article img:hover{
+  width:700px;
+}
+article[id="dos"] +article img{
+  width:150px;
+-moz-transition-property: width;
+-webkit-transition-property: width;
+-o-transition-property: width;
+transition-property: width;
+
+-moz-transition-duration: 8s;
+-webkit-transition-duration: 8s;
+-o-transition-duration: 8s;
+transition-duration: 8s;
+}
+
+
+
+article[id="dos"] img:hover{
+width:50px;
+
+}
+article[id="dos"] img{
+  width:800px;
+-moz-transition-property: width;
+-webkit-transition-property: width;
+-o-transition-property: width;
+transition-property: width;
+
+-moz-transition-duration: 10s;
+-webkit-transition-duration: 10s;
+-o-transition-duration: 10s;
+transition-duration: 10s;
+}
+
+[id="uno"]{
+  color:blue;
+    font-size:10pt;
+-moz-transition-property: color, font-size;
+-webkit-transition-property:color, font-size;
+-o-transition-property:color, font-size;
+transition-property: color, font-size;
+
+-moz-transition-duration: 1s;
+-webkit-transition-duration: 1s;
+-o-transition-duration: 1s;
+transition-duration: 1s;
+}
+[id="uno"]:hover{
+  color: green;
+  font-size: 14pt;
+}
+
+[id="dos"]{
+  color:red;
+    font-size:15pt;
+-moz-transition-property: color, font-size;
+-webkit-transition-property:color, font-size;
+-o-transition-property:color, font-size;
+transition-property: color, font-size;
+
+-moz-transition-duration: 1s;
+-webkit-transition-duration: 1s;
+-o-transition-duration: 1s;
+transition-duration: 1s;
+}
+[id="dos"]:hover{
+  color: violet;
+  font-size: 11pt;
+}
+
+
+
+
+[class="uno"]{
+  color:green;
+    font-size:12pt;
+-moz-transition-property: color, font-size;
+-webkit-transition-property:color, font-size;
+-o-transition-property:color, font-size;
+transition-property: color, font-size;
+
+-moz-transition-duration: 1s;
+-webkit-transition-duration: 1s;
+-o-transition-duration: 1s;
+transition-duration: 1s;
+}
+[class="uno"]:hover{
+  color: brown;
+  font-size: 16pt;
+}
+[class="dos"]{
+  color:yellow;
+    font-size:13pt;
+-moz-transition-property: color, font-size;
+-webkit-transition-property:color, font-size;
+-o-transition-property:color, font-size;
+transition-property: color, font-size;
+
+-moz-transition-duration: 1s;
+-webkit-transition-duration: 1s;
+-o-transition-duration: 1s;
+transition-duration: 1s;
+}
+[class="dos"]:hover{
+  color: orange;
+  font-size: 8pt;
+}
